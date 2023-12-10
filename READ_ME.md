@@ -49,21 +49,9 @@ This is a simple Node.js and EJS application for tracking issues/bugs related to
 3. Filter, search, and create issues as needed.
 4. Enjoy managing your project issues with ease!
 
-## Dependencies
-
-- **Express**: Fast, unopinionated, minimalist web framework for Node.js.
-- **EJS**: Embedded JavaScript templating.
-- **MongoDB**: NoSQL database for data storage.
-- **Mongoose**: MongoDB object modeling for Node.js.
-- **Bootstrap**: Front-end framework for styling.
-
-## Contributing
-
-Contributions are welcome! Please follow the Contribution Guidelines.
-
 ### Folder Structure
 
-`````
+```
 Issue_Tracker
 │
 ├── database/
@@ -87,5 +75,16 @@ Issue_Tracker
 ├── package-lock.json
 ├── package.json
 └── README.md
-    ````
-`````
+```
+
+## Dependencies
+
+- **Express**: Fast, unopinionated, minimalist web framework for Node.js.
+- **EJS**: Embedded JavaScript templating.
+- **MongoDB**: NoSQL database for data storage.
+- **Mongoose**: MongoDB object modeling for Node.js.
+- **Bootstrap**: Front-end framework for styling.
+
+## Contributing
+
+Contributions are welcome! Please follow the Contribution Guidelines.
