@@ -59,7 +59,7 @@ Issue_Tracker
 ├── database/
 │   ├── config.js
 │   ├── issue.js
-│    project.js
+│   └── project.js
 │
 │
 ├──node_modules
