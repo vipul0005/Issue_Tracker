@@ -49,30 +49,6 @@ This is a simple Node.js and EJS application for tracking issues/bugs related to
 3. Filter, search, and create issues as needed.
 4. Enjoy managing your project issues with ease!
 
-### Folder Structure
-
-`````
-Issue_Tracker
-│
-├── database/
-│   ├── config.js
-│   ├── issue.js
-│    project.js
-│
-├── views/
-│   ├── common/
-│   │   ├── Footer.ejs
-│   │   └── Nav.ejs
-│   ├── CreateIssue.ejs
-│   ├── CreateProject.ejs
-│   ├── Home.ejs
-│   └── ProjectDetails.ejs
-│
-├── index.js
-├── package.json
-└── README.md
-    ````
-
 ## Dependencies
 
 - **Express**: Fast, unopinionated, minimalist web framework for Node.js.
@@ -84,4 +60,32 @@ Issue_Tracker
 ## Contributing
 
 Contributions are welcome! Please follow the Contribution Guidelines.
+
+### Folder Structure
+
+`````
+Issue_Tracker
+│
+├── database/
+│   ├── config.js
+│   ├── issue.js
+│    project.js
+│
+│
+├──node_modules
+│
+├── views/
+│   ├── common/
+│   │   ├── Footer.ejs
+│   │   └── Nav.ejs
+│   ├── CreateIssue.ejs
+│   ├── CreateProject.ejs
+│   ├── Home.ejs
+│   └── ProjectDetails.ejs
+│
+├── index.js
+├── package-lock.json
+├── package.json
+└── README.md
+    ````
 `````
