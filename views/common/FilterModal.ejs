@@ -1,0 +1,93 @@
+<!-- The modal structure -->
+<div
+  class="modal fade"
+  id="filterModal"
+  tabindex="-1"
+  aria-labelledby="filterModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form method="get" action="/project-details/<%= projectId %>">
+        <div class="modal-header">
+          <h5 class="modal-title" id="filterModalLabel">Filter Issues</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <!-- Input fields for labels and author -->
+          <input type="hidden" name="projectId" value="<%= projectId %>" />
+          <label for="filterLabels" class="form-label fs-3">Filter by Labels: </label>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="gridCheck1"
+              name="issueLabel"
+              value="Bug"
+            />
+            <label class="form-check-label" for="gridCheck1">Bug</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="gridCheck2"
+              name="issueLabel"
+              value="UI Improvement"
+            />
+            <label class="form-check-label" for="gridCheck2">UI Improvement</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="gridCheck3"
+              name="issueLabel"
+              value="Documentation"
+            />
+            <label class="form-check-label" for="gridCheck3">Documentation</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="gridCheck4"
+              name="issueLabel"
+              value="Enhancement"
+            />
+            <label class="form-check-label" for="gridCheck4">Enhancement</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="gridCheck5"
+              name="issueLabel"
+              value="Duplicate"
+            />
+            <label class="form-check-label" for="gridCheck5">Duplicate</label>
+          </div>
+
+          <label for="filterAuthor" class="form-label mt-2 fs-3">Filter by Author:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="filterAuthor"
+            placeholder="Enter author"
+            name="issueAuthor"
+          />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- Button to apply filters -->
+          <button type="submit" class="btn btn-primary">Apply Filters</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

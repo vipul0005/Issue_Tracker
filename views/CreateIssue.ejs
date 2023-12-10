@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/8281cb5644.js" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <%- include ('common/Nav');%>
+
+    <div
+      class="w-100 text-dark d-flex flex-wrap justify-content-center p-1 p-sm-5 bg-dark bg-gradient"
+      style="min-height: calc(80vh - 50px)"
+    >
+      <div class="card w-100" style="height: fit-content">
+        <div class="card-header bg-primary text-white fs-2 p-auto text-center" style="height: 70px">
+          Create Issue
+        </div>
+        <form class="m-2 p-2" method="post" action="/create-issue/<%= projectID %>">
+          <input type="hidden" name="projectId" value="<%= projectID %>" />
+          <!-- Title -->
+
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Title </label>
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control"
+                id="inputEmail3"
+                placeholder="Enter Issue Title"
+                name="issueTitle"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Description  -->
+
+          <div class="row mb-3">
+            <label for="issueDescription" class="col-sm-2 col-form-label"> Description</label>
+            <div class="col-sm-10">
+              <textarea
+                class="form-control"
+                id="issueDescription"
+                rows="3"
+                name="issueDescription"
+                placeholder="Describe Your Issue..."
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <!-- Labels  -->
+
+          <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">Add Label</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck1"
+                  name="issueLabel"
+                  value="Bug"
+                />
+                <label class="form-check-label" for="gridCheck1"> Bug </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck2"
+                  name="issueLabel"
+                  value="UI Improvement"
+                />
+                <label class="form-check-label" for="gridCheck2"> UI Improvement</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck3"
+                  name="issueLabel"
+                  value="Documentation"
+                />
+                <label class="form-check-label" for="gridCheck3"> Documentation </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck4"
+                  name="issueLabel"
+                  value="Enhancement"
+                />
+                <label class="form-check-label" for="gridCheck4"> Enhancement </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck5"
+                  name="issueLabel"
+                  value="Duplicate"
+                />
+                <label class="form-check-label" for="gridCheck5"> Duplicate </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="row mb-3">
+            <label for="inputAuthor" class="col-sm-2 col-form-label">Author</label>
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control"
+                id="inputAuthor"
+                placeholder="Enter Author"
+                name="issueAuthor"
+              />
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center justify-content-md-end flex-wrap">
+            <!-- <button type="submit" class="btn btn-danger my-3 mx-4 fs-5">Back</button> -->
+            <!-- <a href="/project-details" class="btn btn-danger my-3 mx-4 fs-5">Back</a> -->
+            <button type="submit" class="btn btn-success my-3 mx-4 fs-5">Create</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <%- include ('common/Footer');%>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

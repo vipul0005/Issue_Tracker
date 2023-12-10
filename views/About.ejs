@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <%- include ('common/Nav');%>
+
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card shadow">
+            <div class="card-header bg-primary text-white text-center">
+              <h3>About Us</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                Welcome to our project management platform! We aim to provide a simple and effective
+                solution for tracking issues and bugs in your projects.
+              </p>
+
+              <h5>Our Mission</h5>
+              <p>
+                To streamline project management by offering a user-friendly interface for creating,
+                managing, and tracking project issues.
+              </p>
+
+              <h5>Features</h5>
+              <ul>
+                <li>Build a neat UI</li>
+                <li>Show a list of projects on the home page</li>
+                <li>Allow users to create a new project</li>
+                <li>Project Detail Page to show bugs related to the project</li>
+                <li>Filter issues by labels, author, and search by title and description</li>
+                <li>Create a new issue for a project</li>
+              </ul>
+
+              <h5>Issue Tracker</h5>
+              <p>
+                Our platform includes an issue tracker inspired by popular solutions like Github.
+                You can manage your project's issues efficiently with features such as filtering,
+                searching, and creating new issues.
+              </p>
+
+              <h5>Get Started</h5>
+              <p>
+                Explore our platform, create projects, track issues, and enhance your project
+                management experience. We look forward to supporting your development journey!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include ('common/Footer'); %>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
