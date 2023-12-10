@@ -1,7 +1,8 @@
 # Issue Tracker App
 
 This is a simple Node.js and EJS application for tracking issues/bugs related to projects.
-Hoisted Link:https://issue-tracker-sf0i.onrender.com/
+
+Hoisted Link: https://issue-tracker-sf0i.onrender.com/
 
 ## Table of Contents
 
